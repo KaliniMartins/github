@@ -15,10 +15,9 @@ if (salarioBruto <= 1045) {
 } else if (salarioBruto <= 6101.06) {
     var inss = salarioBruto * (14 / 100)
 
-} else (salarioBruto > 6101.06); {
-    var inss = salarioBruto - 713.10
+} else {
+    var inss = 713.10;
 }
-
 
 
 //calculo ir//
@@ -37,4 +36,7 @@ if (salarioBruto > 4664.68) {
     var ir = salarioBruto * (7.5 / 100)
 }
 
-alert("Seu salário Bruto é de: " + salarioBruto + "\nSeu total de descontos de INSS é de: " + inss + "\nDe IR: " + ir + "\nSeu salário final: " + salarioBruto - inss - ir)
+var TotalDeDescontos = inss + ir
+var SalarioLiquido = salarioBruto - TotalDeDescontos
+
+alert("O total de desocntos é de: " + TotalDeDescontos + "\nO seu Salário líquido é: " + SalarioLiquido);
