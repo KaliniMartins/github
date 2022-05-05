@@ -15,8 +15,11 @@ if (salarioBruto <= 1045) {
 } else if (salarioBruto <= 6101.06) {
     var inss = salarioBruto * (14 / 100)
 
-} else (salarioBruto > 6101.06);
-var inss = salarioBruto - 713.10
+} else (salarioBruto > 6101.06); {
+    var inss = salarioBruto - 713.10
+}
+
+
 
 //calculo ir//
 var ir = 0.0;
